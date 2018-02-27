@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Lesson 20</title>
+	<link rel="stylesheet" href="libs/bootstrap.css">
+	<link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+<div class="wrapper">
+	<!-- Header -->
+	//= template/header.html
+	<!-- Content -->
+	<div class="content">
+		<div class="container">
+			<div class="row">
+				<!-- Add task -->
+				<div class="add-task col-3">
+					<input type="button" value="Add task" class="btn btn-primary col-12" id="add-task">
+				</div>
+				<!-- Form-task -->
+				<div class="form-task col-9">
+					<form>
+						<h3>Create task</h3>
+						<!-- Name -->
+						<div class="row form-group">
+							<label for="name" class="col-3">Enter name task: </label>
+							<input type="text" id="name" class="col-9 form-control">
+						</div>
+						<!-- Priority -->
+						<div class="row form-group">
+							<label for="priority" class="col-3">Enter priority of task: </label>
+							<select name="priority" id="priority" class="col-9 form-control">
+								<option value="">-Select priority-</option>
+								<option value="ASAP">ASAP</option>
+								<option value="Important">Important</option>
+								<option value="Minor">Minor</option>
+								<option value="Blocker">Blocker</option>
+							</select>
+						</div>
+						<!-- Info -->
+						<div class="row form-group">
+							<label for="info" class="col-3">Enter info of task: </label>
+							<textarea id="info" class="col-9 form-control" rows="3"></textarea>
+						</div>
+					</form>
+				</div>
+			</div>
+			<!-- Task-list -->
+			<div class="task-list">
+				<!-- Ajax -->
+				<div class="ajax col-12">
+					<div class="row">
+						<h4>Ajax action:</h4>
+						<button class="btn btn-light" id="ajax">Ajax</button>
+						<button class="btn btn-light" id="web-sockets-start">WebSockets Start</button>
+						<button class="btn btn-light" id="web-sockets-end">WebSockets End</button>
+					</div>
+				</div>
+				<!-- Buttons -->
+				<div class="buttons col-12">
+					<div class="row">
+						<!-- Buttons state -->
+						<h4>State filter: </h4>
+						<button type="button" class="btn btn-primary all-task btn-sm">All tasks
+							<span class="badge badge-light btn-length-all "></span>
+						</button>
+						<button type="button" class="btn btn-success todo-task btn-sm">TODO tasks
+							<span class="badge badge-light btn-length-todo"></span>
+						</button>
+						<button type="button" class="btn btn-warning done-task btn-sm">Done tasks
+							<span class="badge badge-light btn-length-done"></span>
+						</button>
+						<button type="button" class="btn btn-info progress-task btn-sm">In progress tasks
+							<span class="badge badge-light btn-length-progress"></span>
+						</button>
+						<button type="button" class="btn btn-danger removed-task btn-sm">Removed tasks
+							<span class="badge badge-light btn-length-removed"></span>
+						</button>
+					</div>
+				</div>
+				<!-- Tasks -->
+				<div class="tasks"></div>
+			</div>
+		</div>
+	</div>
+	<!-- Footer -->
+	//= template/footer.html
+</div>
+<!-- Script -->
+<script src="libs/jquery.min.js"></script>
+<script src="js/main.js"></script>
+<!---->
+</body>
+</html>

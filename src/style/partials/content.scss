@@ -1,0 +1,72 @@
+
+// Content
+.content{
+  background: #8e9072;
+  .container{
+    padding-bottom: 25px;
+    background: #300219;
+    border-radius: 25px;
+    .add-task{
+      width: 100%;
+      margin-top: 40px;
+      #add-task{
+        height: 180px;
+        background: #25427d;
+      }
+    }
+    .form-task{
+      color: white;
+      h3{
+        text-align: center;
+      }
+      .row{
+        margin:10px;
+      }
+    }
+    .task-list{
+      margin-top: 25px;
+      .buttons{
+        color: white;
+        .row{
+          justify-content: space-between;
+          h4{
+            width: 20%;
+          }
+        }
+      }
+      h3{
+        text-align: center;
+      }
+      .task{
+        background: #25427d;
+        color: white;
+        border-radius: 20px;
+        padding: 25px;
+        margin: 10px;
+        word-wrap: break-word;
+        .row{
+          justify-content: space-between;
+        }
+        h3{
+          text-align: center;
+        }
+        input{
+        }
+      }
+    }
+    .ajax{
+      color: white;
+      .row{
+        justify-content: space-between;
+      }
+      button{
+        padding: 10px;
+        margin: 10px 0;
+        width: 25%;
+      }
+    }
+  }
+}
+
+
+

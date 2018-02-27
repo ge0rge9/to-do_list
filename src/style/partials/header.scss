@@ -1,0 +1,33 @@
+// Libs & Mixin
+@import "libs";
+
+// Header
+header{
+  font-family: Georgia;
+  max-height: $height / 5;
+  background: $bg-color1;
+  // Header row
+  .row{
+    justify-content: space-between;
+    h2{
+      color: $bg-color2;
+    }
+    // Logo
+    .logo{
+      margin-left: $margin;
+    }
+    // Lesson
+    .lesson{
+      align-self: $center-align;
+    }
+    // Name
+    .name{
+      font-family: Lobster;
+      align-self: $center-align;
+      margin-right: $margin;
+    }
+  }
+}
+.wrapper header{
+  flex: 1 0 auto;
+}
